@@ -5,6 +5,10 @@ on:
       - main
     paths-ignore:
       - '*.pdf'
+
+permissions:
+  contents: write
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -12,31 +16,23 @@ jobs:
       image: danteev/texlive:latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: false
+        uses: actions/checkout@v4
 
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v3
         with:
           root_file: resume.tex
-        
-      - name: Post Processing 
+
+      - name: Post Processing
         run: |
-          mkdir build 
-          cp *.pdf build/ 
+          mkdir build
+          cp *.pdf build/
           cp index.html build/
 
-      - name: Mark repository as safe
-        run: git config --global --add safe.directory /__w/resume/resume
-          
-      - name: Git add
-        run: git add resume.pdf
-      
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          GITHUB_TOKEN: ${{ secrets.RESUME_SECRET }}
-          BRANCH: gh-pages 
-          FOLDER: build
-          CLEAN: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: build
+          clean: true
