@@ -12,8 +12,6 @@ permissions:
 jobs:
   build_latex:
     runs-on: ubuntu-latest
-    container:
-      image: danteev/texlive:latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
