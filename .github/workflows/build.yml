@@ -26,6 +26,7 @@ jobs:
           mkdir build
           cp *.pdf build/
           cp index.html build/
+          cp CNAME build/
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
