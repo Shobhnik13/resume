@@ -25,10 +25,10 @@
 \newcommand{\resumeheader}[6]{%
     \begin{center}
         {\Large \textbf{#1}}\\[4pt]
-        \href{mailto:#2}{#2} $|$ 
-        \href{#3}{Portfolio} $|$ 
-        \href{#4}{Github} $|$ 
-        \href{#5}{LinkedIn} $|$ 
+        \href{mailto:#2}{#2} $|$
+        \href{#3}{Portfolio} $|$
+        \href{#4}{Github} $|$
+        \href{#5}{LinkedIn} $|$
         #6
     \end{center}
 }
@@ -61,58 +61,70 @@
 
 \section{Experience}
 
-\experience{Software Engineer}{Xane AI}{Gurugram, India}{Jan 2026 -- Present}
-\begin{itemize}
+\experience{Software Engineer(Backend/AI)}{Xane AI}{Gurugram, India}{Jan 2026 -- Present}
+\begin{itemize}[leftmargin=20pt, topsep=1pt, parsep=0pt, itemsep=5pt]
 
-\item Designed \textbf{system architectures, DB schemas, APIs and AWS deployment plans } for new microservices powering the main revenue-driving product.
+\item Designed \textbf{system architectures, database schemas, APIs, and AWS deployment plans} for new microservices powering the company's flagship revenue-driving product.
 
-\item Migrated a legacy JS codebase to \textbf{Bun, TypeScript, and Zod} alongside a \textbf{multi-tenant DB migration} with zero downtime and no production data loss.
+\item Executed a \textbf{live migration} of a production system serving \textbf{3.1M+ active users}, migrating the backend from \textbf{JavaScript} to \textbf{Bun, TypeScript, and Zod} alongside a \textbf{multi-tenant database migration}, achieving \textbf{almost zero downtime} with no production data loss.
 
-\item Built a lightweight \textbf{image inferencing pipeline} on \textbf{Raspberry Pi} using \textbf{ONNXRuntime-Node, YOLOv8, and Node.js}, optimised to run efficiently on hardware with minimal CPU resources.
+\item Conducted extensive \textbf{R\&D on agent memory, RAG evaluation (RAGAS), OCR pipelines (MinerU), and LLM integrations}, building multiple internal \textbf{AI agent harnesses} that automated engineering workflows and reduced manual effort by \textbf{\(\sim\)90\%}.
 
-\item Conducted extensive \textbf{R\&D on agents memory, RAG accuracy frameworks like RAGAS}, and open-source \textbf{OCR pipelines} (MinerU)
+\item Built a lightweight \textbf{edge AI inferencing pipeline} on \textbf{Raspberry Pi} using \textbf{ONNXRuntime-Node, YOLOv8, and Node.js}, optimized for efficient real-time inference on resource-constrained hardware.
+
 \end{itemize}
 \vspace{1mm}
 
 \experience{Software Engineer}{Otomashen (E-solutions)}{Noida, India}{Feb 2025 -- Jan 2026}
-\begin{itemize}
-
-\item Built and scaled a high-throughput \textbf{EDI/X12 processing engine} handling 20k+ claim files and millions of encrypted denial records, driving a \textbf{166\% revenue increase}.
-
-\item Optimized backend services in \textbf{Node.js/TypeScript} with query tuning, indexing, and caching; reduced API latency from \textbf{10s to <1s} at scale.
-
-\item Engineered a \textbf{real-time dispatch system} for proximity based doctor matching, request lifecycle (accept/decline), and instant notifications.
-
-\item Delivered \textbf{4 production grade client systems}, led one end to end as \textbf{Lead Developer}, owning architecture and execution.
-
-\end{itemize}
-
-\vspace{1mm}
-
-\experience{Full Stack Developer}{Stealth Startup}{Remote}{Aug 2024 -- Jan 2025}
 \begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
 
-\item Owned the product end to end as the sole engineer, building all frontend workflows and integrating backend APIs from design to production.
+\item Built and scaled a high-throughput \textbf{EDI/X12 processing engine} handling \textbf{20k+ claim files} and millions of encrypted denial records, driving a \textbf{166\% revenue increase}.
 
-\item Architected the complete backend system, designing scalable architecture, database schema, and core processing workflows.
+\item Optimized \textbf{Node.js/TypeScript} backend services through query tuning, indexing, and caching, reducing API latency from \textbf{10s to <1s}, and engineered a \textbf{real-time dispatch system} for doctor matching and notifications.
 
-\item Built a high-throughput notification pipeline using \textbf{Node.js/TypeScript, BullMQ, Redis, PostgreSQL, and Socket.io}, delivering thousands of notifications per second, implemented vector search for fast large scale retrieval.
-
-\item Developed a production grade AI agent using \textbf{LangGraph, LangChain, and Gemini} for complex workflow automation.
-
-\item Scaled the platform to \textbf{200--250 active users} managing \textbf{500k+ production records} in production.
+\item Delivered \textbf{4 production-grade client systems}, leading one end-to-end as the \textbf{Lead Developer}, owning architecture, implementation, and deployment.
 
 \end{itemize}
 
+\vspace{2mm}
+
+\experience{Software Engineer}{Stealth Startup (YC-backed)}{Remote}{Aug 2024 -- Jan 2025}
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+
+\item Owned the product end-to-end as the founding engineer, designing the system architecture, database schema, frontend, backend APIs, and production deployment.
+
+\item Built a high-throughput \textbf{AI work management platform} using \textbf{Node.js, TypeScript, BullMQ, Redis, PostgreSQL, LangGraph, and Gemini}, processing \textbf{1,000+ requests daily} across \textbf{millions of production records}.
+
+\end{itemize}
 \section{Projects}
+
+\project{Amigmi}{https://github.com/Shobhnik13/amigmi}
+{https://amigmi.xyz}
+\begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=2pt]
+
+\item Built an open-source \textbf{CLI tool} that locally parses \textbf{JSONL} logs from \textbf{Claude Code, Codex, and OpenCode} to track AI token usage and rank developers on a \textbf{global leaderboard}.
+\end{itemize}
+
 
 \project{InsightPlus}{https://github.com/Shobhnik13/InsightPlus}{https://insightplus.shobhnik.site}
 \begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=2pt]
 
-    \item Built a fully open-source, self-hostable and easy-to-integrate analytics engine using NestJS, TypeScript, and Redis Streams, ingesting \textbf{tens of thousands of events/sec} via simple API calls.
+\item Built a fully open-source, self-hostable analytics engine using \textbf{NestJS, TypeScript, Redis Streams, PostgreSQL, and ClickHouse}, ingesting \textbf{tens of thousands of events/sec} while supporting real-time metrics including \textbf{MAU, DAU, retention, funnels, and custom events}.
 
-    \item Designed a dual-database architecture supporting \textbf{PostgreSQL and ClickHouse} for metrics like MAU, DAU, retention, and custom events.
+\end{itemize}
 
+
+\project{Whooper}{https://github.com/Shobhnik13/whooper}{https://whooper.shobhnik.site/}
+\begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=2pt]
+
+\item Built an open-source \textbf{API caching proxy} that sits between clients and backend services, caching responses and automatically invalidating them using user-defined rules.
+\end{itemize}
+
+\project{Redis-inside}{https://github.com/Shobhnik13/whooper}
+{https://github.com/Shobhnik13/redis-inside}
+\begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=2pt]
+
+\item Built an open-source \textbf{CLI tool} that brings \textbf{Redis Insights} to the terminal, allowing developers to browse keys, inspect data, monitor memory usage, and manage Redis without leaving the CLI.
 \end{itemize}
 
 \section{Technical Skills}
