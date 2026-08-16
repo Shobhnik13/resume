@@ -62,21 +62,32 @@
 \section{Experience}
 
 \experience{Software Engineer(Backend/AI)}{Xane AI}{Gurugram, India}{Jan 2026 -- Present}
-\begin{itemize}[leftmargin=20pt, topsep=1pt, parsep=0pt, itemsep=5pt]
+\begin{itemize}[leftmargin=20pt, topsep=1pt, parsep=0pt, itemsep=2pt]
 
-\item Designed \textbf{system architectures, database schemas, APIs, and AWS deployment plans} for new microservices powering the company's flagship revenue-driving product.
+\item Designed and implemented \textbf{end-to-end system architectures, database schemas, and REST APIs}, along with technical documentation and \textbf{AWS deployment plans} for the core product and its microservices serving \textbf{3.1M+ total users} .
 
-\item Executed a \textbf{live migration} of a production system serving \textbf{3.1M+ active users}, migrating the backend from \textbf{JavaScript} to \textbf{Bun, TypeScript, and Zod} alongside a \textbf{multi-tenant database migration}, achieving \textbf{almost zero downtime} with no production data loss.
+\item Built a \textbf{multi-tool search agent} using \textbf{DeepAgents (LangChain)} with persistent memory via \textbf{Mem0}, backed by hybrid retrieval over \textbf{Qdrant} using \textbf{BGE-M3 embeddings} and \textbf{Reciprocal Rank Fusion (RRF)}.
 
-\item Conducted extensive \textbf{R\&D on agent memory, RAG evaluation (RAGAS), OCR pipelines (MinerU), and LLM integrations}, building multiple internal \textbf{AI agent harnesses} that automated engineering workflows and reduced manual effort by \textbf{\(\sim\)90\%}.
+\item Engineered a \textbf{document ingestion pipeline} handling \textbf{OCR (MinerU)}, Markdown-aware chunking, and vector embedding, with \textbf{image contextualisation} for multimodal retrieval.
 
-\item Built a lightweight \textbf{edge AI inferencing pipeline} on \textbf{Raspberry Pi} using \textbf{ONNXRuntime-Node, YOLOv8, and Node.js}, optimized for efficient real-time inference on resource-constrained hardware.
-
+\item Explored open-source \textbf{models, tools, and frameworks}, and built internal tools and POCs to validate their fit into existing workflows, including \textbf{RAGAS-based evaluation} of RAG accuracy.
 \end{itemize}
-\vspace{1mm}
+
+\vspace{2mm}
+
+\experience{Software Engineer}{Roger (YC S24) }{Remote (Freelance/Contract)}{May 2026 -- June 2026}
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+\item Built an \textbf{AI agent} that takes a brand's website URL, scrapes its site and online presence, and learns the brand's identity, tone, and visual style to generate on-brand posts, creatives, and \textbf{UGC-style ads}.
+
+\item Built the publishing loop end-to-end by \textbf{GPT Image 2} for ad creative generation, \textbf{Seedance 2} for live-avatar video, \textbf{Meta Ads APIs} for direct campaign deployment converting it to a \textbf{URL to live ad}, fully automated.
+
+\item Architected the system, web crawling, \textbf{tool orchestration} with context and memory management, job \textbf{queuing and retries}, and real-time status tracking for video generation.
+\end{itemize}
+
+\vspace{2mm}
 
 \experience{Software Engineer}{Otomashen (E-solutions)}{Noida, India}{Feb 2025 -- Jan 2026}
-\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=1pt]
 
 \item Built and scaled a high-throughput \textbf{EDI/X12 processing engine} handling \textbf{20k+ claim files} and millions of encrypted denial records, driving a \textbf{166\% revenue increase}.
 
@@ -86,21 +97,21 @@
 
 \end{itemize}
 
-\vspace{2mm}
+\vspace{1mm}
 
-\experience{Software Engineer}{Stealth Startup (YC-backed)}{Remote}{Aug 2024 -- Jan 2025}
-\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+% \experience{Software Engineer}{Stealth Startup (YC-backed)}{Remote}{Aug 2024 -- Jan 2025}
+% \begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=1pt]
 
-\item Owned the product end-to-end as the founding engineer, designing the system architecture, database schema, frontend, backend APIs, and production deployment.
+% \item Owned the product end-to-end as the founding engineer, designing the system architecture, database schema, frontend, backend APIs, and production deployment.
 
-\item Built a high-throughput \textbf{AI work management platform} using \textbf{Node.js, TypeScript, BullMQ, Redis, PostgreSQL, LangGraph, and Gemini}, processing \textbf{1,000+ requests daily} across \textbf{millions of production records}.
+% \item Built a high-throughput \textbf{AI work management platform} using \textbf{Node.js, TypeScript, BullMQ, Redis, PostgreSQL, LangGraph, and Gemini}, processing \textbf{1,000+ requests daily} across \textbf{millions of production records}.
 
-\end{itemize}
+% \end{itemize}
 \section{Projects}
 
 \project{Amigmi}{https://github.com/Shobhnik13/amigmi}
 {https://amigmi.xyz}
-\begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=2pt]
+\begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=1pt]
 
 \item Built an open-source \textbf{CLI tool} that locally parses \textbf{JSONL} logs from \textbf{Claude Code, Codex, and OpenCode} to track AI token usage and rank developers on a \textbf{global leaderboard}.
 \end{itemize}
@@ -129,13 +140,13 @@
 \section{Technical Skills}
 \textbf{Languages:} Javascript, Typescript, Golang(Go)
 
-\textbf{Frameworks:} Next.js, NestJS, React.js, Node.js, Express.js, Langchain, Deep agents
+\textbf{Frameworks:} Next.js, NestJS, React.js, Express.js, Langchain, Deep agents
 
-\textbf{Coursework:} System Design (HLD \& LLD), Computer Networks, Operating Systems, DBMS
+\textbf{Runtime:} Bun, Node.js
 
-\textbf{DevOps/Infra:} Microsoft Azure, AWS, Vercel, Git, Docker, CI/CD, BullMQ, Burp Suite
+\textbf{DevOps/Infra:} AWS, Azure, Vercel, Git, Docker, Github Actions
 
-\textbf{Databases:} PostgreSQL, MySQL, MongoDB, Redis, ClickHouse
+\textbf{Databases:} PostgreSQL, MySQL, Redis, MongoDB, Vector db(Qdrant, Pinecone), ClickHouse 
 
 % \section{Achievements}
 % \textbf{•} Top 3 in HackJNU and HackIIITD \quad
