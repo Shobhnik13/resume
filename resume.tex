@@ -45,7 +45,7 @@
 \newcommand{\project}[3]{%
     \textbf{#1}%
     \ifthenelse{\equal{#2}{}}{}{ \href{#2}{Github}}%
-    \ifthenelse{\equal{#3}{}}{}{ \,|\, \href{#3}{Live}}%
+    \ifthenelse{\equal{#3}{}}{}{\ifthenelse{\equal{#2}{}}{}{ \,|\,} \href{#3}{Live}}%
 }
 
 \begin{document}
@@ -108,6 +108,11 @@
 \end{itemize}
 \section{Projects}
 
+\project{Jev-check}{}{https://jev-check-five.vercel.app/}
+\begin{itemize}[leftmargin=15pt]
+\item Experimenting with \textbf{Jev}, a new image model, to check a photo has everything a \textbf{visual checklist} needs.
+\end{itemize}
+
 \project{Amigmi}{https://github.com/Shobhnik13/amigmi}
 {https://amigmi.xyz}
 \begin{itemize}[leftmargin=15pt]
@@ -128,12 +133,6 @@
 \item Self-hostable analytics engine on \textbf{NestJS, Redis Streams, and ClickHouse}, ingesting \textbf{10k+ events/sec}.
 \end{itemize}
 
-\project{Redis-inside}{https://github.com/Shobhnik13/redis-inside}
-{}
-\begin{itemize}[leftmargin=15pt]
-
-\item Open-source \textbf{CLI} bringing \textbf{Redis Insights} to the terminal to browse keys, inspect data, and monitor memory.
-\end{itemize}
 
 \section{Technical Skills}
 \textbf{Languages:} Javascript, Typescript, Golang(Go)
