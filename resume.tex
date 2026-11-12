@@ -16,21 +16,22 @@
 }
 
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{3pt}
+\setlength{\parskip}{1pt}
 \pagestyle{empty}
 
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{8pt}{4pt}
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+\setlist[itemize]{topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt}
 
 \newcommand{\resumeheader}[6]{%
-    \begin{center}
-        {\Large \textbf{#1}}\\[4pt]
+    {\centering
+        {\Large \textbf{#1}}\\[2pt]
         \href{mailto:#2}{#2} $|$ 
         \href{#3}{Portfolio} $|$ 
         \href{#4}{Github} $|$ 
         \href{#5}{LinkedIn} $|$ 
-        #6
-    \end{center}
+        #6\par}
 }
 
 \newcommand{\education}[4]{%
@@ -62,7 +63,7 @@
 \section{Experience}
 
 \experience{Software Engineer(Backend/AI)}{Xane AI}{Gurugram, India}{Jan 2026 -- Present}
-\begin{itemize}[leftmargin=20pt, topsep=1pt, parsep=0pt, itemsep=2pt]
+\begin{itemize}[leftmargin=20pt]
 
 \item Built an \textbf{AI agent on Mastra} that acts as an assistant for automobiles and appliances, handling everything from \textbf{information retrieval} to \textbf{service booking} and \textbf{warranty claims}.
 
@@ -73,20 +74,18 @@
 \item Designed \textbf{system architecture, database schemas, APIs, and AWS deployment plans} for a product serving \textbf{3.1M+ users}.
 \end{itemize}
 
-\vspace{1mm}
 
 \experience{Software Engineer}{Roger (YC S24) }{Remote (Freelance/Contract)}{May 2026 -- June 2026}
-\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=2pt]
+\begin{itemize}[leftmargin=20pt]
 \item Built an \textbf{AI agent} that takes a brand's website URL, scrapes its site and online presence, and learns the brand's identity, tone, and visual style to generate on-brand posts, creatives, and \textbf{UGC-style ads}.
 
 
 \item Architected the system and built the \textbf{URL-to-live-ad} loop end-to-end using \textbf{GPT Image 2}, \textbf{Seedance 2} live-avatar video, and \textbf{Meta Ads APIs}, with \textbf{tool orchestration}, context and memory management, and \textbf{job queueing and retries}.
 \end{itemize}
 
-\vspace{1mm}
 
 \experience{Software Engineer}{Otomashen (E-solutions)}{Noida, India}{Feb 2025 -- Jan 2026}
-\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=1pt]
+\begin{itemize}[leftmargin=20pt]
 
 \item Built and scaled a high-throughput \textbf{EDI/X12 processing engine} handling \textbf{20k+ claim files} and millions of encrypted denial records, driving a \textbf{166\% revenue increase}.
 
@@ -98,10 +97,9 @@
 
 \end{itemize}
 
-\vspace{1mm}
 
 \experience{Founding Product Engineer}{Stealth Startup (YC-backed)}{Remote}{Aug 2024 -- Jan 2025}
-\begin{itemize}[leftmargin=20pt, topsep=0pt, itemsep=1pt]
+\begin{itemize}[leftmargin=20pt]
 
 \item Owned the product end-to-end as the \textbf{founding product engineer}, including \textbf{system architecture, database schema, frontend, backend APIs, and deployment}.
 
@@ -112,27 +110,27 @@
 
 \project{Amigmi}{https://github.com/Shobhnik13/amigmi}
 {https://amigmi.xyz}
-\begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=1pt]
+\begin{itemize}[leftmargin=15pt]
 
 \item Open-source \textbf{CLI} parsing \textbf{Claude Code, Codex, and OpenCode} logs to rank developers by AI token usage.
 \end{itemize}
 
 
 \project{Whooper}{https://github.com/Shobhnik13/whooper}{https://whooper.shobhnik.site/}
-\begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=2pt]
+\begin{itemize}[leftmargin=15pt]
 
 \item Open-source \textbf{API caching proxy} that caches backend responses and auto-invalidates them via user-defined rules.
 \end{itemize}
 
 \project{InsightPlus}{https://github.com/Shobhnik13/InsightPlus}{https://insightplus.shobhnik.site}
-\begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=2pt]
+\begin{itemize}[leftmargin=15pt]
 
-\item Self-hostable analytics engine on \textbf{NestJS, Redis Streams, and ClickHouse}, ingesting \textbf{tens of thousands of events/sec}.
+\item Self-hostable analytics engine on \textbf{NestJS, Redis Streams, and ClickHouse}, ingesting \textbf{10k+ events/sec}.
 \end{itemize}
 
 \project{Redis-inside}{https://github.com/Shobhnik13/redis-inside}
 {}
-\begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=2pt]
+\begin{itemize}[leftmargin=15pt]
 
 \item Open-source \textbf{CLI} bringing \textbf{Redis Insights} to the terminal to browse keys, inspect data, and monitor memory.
 \end{itemize}
