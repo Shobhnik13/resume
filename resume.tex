@@ -16,17 +16,18 @@
 }
 
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{1pt}
+\setlength{\parskip}{2pt plus 1pt}
 \pagestyle{empty}
+\flushbottom % stretch spacing so content fills the page
 
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{5pt}{2pt}
+\titlespacing*{\section}{0pt}{6pt plus 2pt}{3pt}
 
-\setlist[itemize]{topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt}
+\setlist[itemize]{topsep=1pt plus 0.5pt, partopsep=0pt, parsep=0pt, itemsep=1pt plus 0.5pt}
 
 \newcommand{\resumeheader}[6]{%
     {\centering
-        {\Large \textbf{#1}}\\[2pt]
+        {\Large \textbf{#1}}\\[4pt]
         \href{mailto:#2}{#2} $|$ 
         \href{#3}{Portfolio} $|$ 
         \href{#4}{Github} $|$ 
@@ -108,9 +109,9 @@
 \end{itemize}
 \section{Projects}
 
-\project{Jev-check}{}{https://jev-check-five.vercel.app/}
+\project{Jev-check}{https://github.com/Shobhnik13/jev-check}{https://jev-check-five.vercel.app/}
 \begin{itemize}[leftmargin=15pt]
-\item Experimenting with \textbf{Jev}, a new image model, to check a photo has everything a \textbf{visual checklist} needs.
+\item Experimenting with \textbf{Jev's new image model} to check a photo has everything a \textbf{visual checklist} needs.
 \end{itemize}
 
 \project{Amigmi}{https://github.com/Shobhnik13/amigmi}
@@ -151,4 +152,6 @@
 % \textbf{•} Led a team of 5+ developers \quad
 % \textbf{•} Co-founded a travel agency serving 2,000+ customers
 
+\vspace{0pt plus 60pt} % absorbs part of the leftover space so gaps stay compact
+\pagebreak % break without \vfil so \flushbottom fills the page
 \end{document}
