@@ -20,13 +20,20 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: |
-            resume.tex
-            product-resume.tex
+            resume/software-resume.tex
+            resume/product-resume.tex
+            cover-letter/software-cover-letter.tex
+            cover-letter/product-cover-letter.tex
+          work_in_root_file_dir: true
 
       - name: Post Processing
         run: |
-          mkdir build
-          cp *.pdf build/
+          mkdir -p build/resume build/cover-letter
+          cp resume/*.pdf build/resume/
+          cp cover-letter/*.pdf build/cover-letter/
+          # legacy paths kept so older links keep working
+          cp resume/software-resume.pdf build/resume.pdf
+          cp resume/product-resume.pdf build/product-resume.pdf
           cp index.html build/
           cp CNAME build/
 

@@ -31,12 +31,16 @@ Served at shobhnik13.github.io/resume/
 
 ## File Map
 
-| File | Purpose |
-|------|---------|
-| `resume.tex` | Full resume content in LaTeX |
-| `index.html` | Browser redirect to the PDF |
-| `.github/workflows/build.yml` | CI: compile LaTeX → deploy to gh-pages |
-| `README.md` | Minimal docs + attribution |
+| File | Purpose | Served at |
+|------|---------|-----------|
+| `resume/software-resume.tex` | Software/backend resume | `resume.shobhnik.site/resume/software-resume.pdf` → `shobhnik.site/resume` |
+| `resume/product-resume.tex` | Product resume | `resume.shobhnik.site/resume/product-resume.pdf` → `shobhnik.xyz/resume` |
+| `cover-letter/software-cover-letter.tex` | Software cover letter | `resume.shobhnik.site/cover-letter/software-cover-letter.pdf` → `shobhnik.site/cover-letter` |
+| `cover-letter/product-cover-letter.tex` | Product cover letter | `resume.shobhnik.site/cover-letter/product-cover-letter.pdf` → `shobhnik.xyz/cover-letter` |
+| `index.html` | Browser redirect to the software resume PDF | |
+| `.github/workflows/build.yml` | CI: compile all four PDFs, deploy to gh-pages | |
+
+The portfolio sites (`Portfolio` and `portfolio-product` repos) proxy these PDFs with Vercel rewrites, so edit the `.tex` here and push; the sites pick up the new PDF with no change on their side. Legacy `resume.pdf` and `product-resume.pdf` are still copied to the root of gh-pages so older links keep working.
 
 ---
 
