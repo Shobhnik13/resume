@@ -1,0 +1,124 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{ifthen}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt plus 1pt}
+\pagestyle{empty}
+\flushbottom % stretch spacing so content fills the page
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt plus 2pt}{3pt}
+
+\setlist[itemize]{topsep=1pt plus 0.5pt, partopsep=0pt, parsep=0pt, itemsep=1pt plus 0.5pt}
+
+\newcommand{\resumeheader}[6]{%
+    {\centering
+        {\Large \textbf{#1}}\\[4pt]
+        \href{mailto:#2}{#2} $|$
+        \href{#3}{Portfolio} $|$
+        \href{#4}{Github} $|$
+        \href{#5}{LinkedIn} $|$
+        #6\par}
+}
+
+\newcommand{\education}[4]{%
+    \textbf{#1}, #2\ (#3) \hfill #4
+}
+
+\newcommand{\experience}[4]{%
+    \textbf{#1,} #2 -- #3 \hfill #4
+}
+
+\newcommand{\project}[3]{%
+    \textbf{#1}%
+    \ifthenelse{\equal{#2}{}}{}{ \href{#2}{Github}}%
+    \ifthenelse{\equal{#3}{}}{}{\ifthenelse{\equal{#2}{}}{}{ \,|\,} \href{#3}{Live}}%
+}
+
+\begin{document}
+
+\resumeheader{Shobhnik}
+{shobhnikw@gmail.com}
+{https://shobhnik.xyz}
+{https://github.com/shobhnik13}
+{https://www.linkedin.com/in/shobhnik13/}
+{+91-8906044442 | Gurugram, India}
+
+\section{Summary}
+Product engineer with \textbf{3 years} shipping and scaling \textbf{0$\rightarrow$1 AI products} at YC and early-stage startups, moving into \textbf{AI product management}. I take in requirements, get to the real problem, break it down, plan around it, and nail the experience.
+
+\section{Education}
+\education{Maharaja Agrasen Institute of Technology}{B.Tech in IT}{8.9 CGPA}{}
+
+\section{Experience}
+
+\experience{Software Engineer (Product \& AI)}{Xane AI}{Gurugram, India}{Present}
+\begin{itemize}[leftmargin=20pt]
+\item Designed and launched the \textbf{customer-facing app and AI support assistant} for a product serving \textbf{3.1M+ users}, letting customers get answers, book a service and file a warranty claim in \textbf{one conversation}.
+\item Turned customer needs into requirements, priorities and release plans with \textbf{product, design and business teams}, and defined agent quality with \textbf{evals, tracing and explainability}.
+\end{itemize}
+
+\experience{Product Engineer (Growth \& AI)}{Aistetic (Oxford AI spinout)}{Remote}{}
+\begin{itemize}[leftmargin=20pt]
+\item Helped grow paid users from \textbf{10 to 100+} (close to \textbf{10x revenue}) and traffic from 2k to \textbf{33k+ unique visitors} for a live AI listing product for resellers.
+\item Work with the \textbf{non-technical CEO} on roadmap, feature breakdowns, \textbf{revenue channels} and \textbf{TikTok campaigns} backed by competitor analysis; run discovery through \textbf{WhatsApp user groups} and fix drop-offs with \textbf{Mixpanel funnels}.
+\item Own product design from \textbf{landing page and UX} to wireframes and internal tools, and lead a \textbf{small engineering team} in sprints, coding myself when needed.
+\end{itemize}
+
+\experience{Product Engineer}{Roger (YC S24)}{Remote}{}
+\begin{itemize}[leftmargin=20pt]
+\item Partnered with the founders on a \textbf{0$\rightarrow$1 AI marketing product} turning a brand's URL into on-brand posts and \textbf{UGC-style ads}, owning the journey from \textbf{URL to live ad on Meta}.
+\end{itemize}
+
+\experience{Software Engineer (Product)}{Otomashen (E-solutions)}{Noida, India}{}
+\begin{itemize}[leftmargin=20pt]
+\item Scaled the core claims product to \textbf{20k+ claim files}, driving a \textbf{166\% revenue increase}, and made it \textbf{10x faster (10s to under 1s)}.
+\item Launched a \textbf{real-time doctor dispatch feature} and delivered \textbf{4 production systems} directly with clients, leading one as \textbf{Lead Developer}.
+\end{itemize}
+
+\experience{Founding Product Engineer}{Stealth Startup (YC-backed)}{Remote}{}
+\begin{itemize}[leftmargin=20pt]
+\item Owned the product with the founders from \textbf{roadmap and UX to launch}, scaling an \textbf{AI work-management platform} to \textbf{100k--200k requests/month}.
+\end{itemize}
+
+\section{Products}
+
+\project{ReachToYC}{https://github.com/Shobhnik13/reachtoyc}{https://reachtoyc.vercel.app/}
+\begin{itemize}[leftmargin=15pt]
+\item Pick a \textbf{YC batch}, find every founder, draft personal cold emails from your prompt, resume and portfolio, and send from your own inbox. Local, free, open source.
+\end{itemize}
+
+\project{FindMeJob}{}{https://findmejob.xyz}
+\begin{itemize}[leftmargin=15pt]
+\item \textbf{100k+ jobs} from Wellfound, Greenhouse and more with seniority and skill filters, plus local agents (\textbf{Claude Code, Codex, OpenCode}) to research companies and email founders.
+\end{itemize}
+
+\project{Jev Check}{https://github.com/Shobhnik13/jev-check}{https://jev-check-five.vercel.app/}
+\begin{itemize}[leftmargin=15pt]
+\item AI photo checks in \textbf{under a second}, with unsure cases routed to a \textbf{human reviewer} and agreement tracked rule by rule.
+\end{itemize}
+
+\section{Skills}
+\textbf{Product:} 0$\rightarrow$1 shaping, Requirements \& specs, Prioritisation, Roadmapping, Release planning, UX \& prototyping, Figma, Notion, Jira, Mixpanel
+
+\textbf{AI:} LLM agents, Evals, Tracing \& explainability, RAG, Prompt \& context design, Claude Code, Codex, MCP, Hermes, OpenClaw
+
+\textbf{Tech:} JavaScript, TypeScript, Python, Golang, Next.js, Node.js, PostgreSQL, Redis, AWS, GCP, Cloudflare, Docker
+
+\vspace{0pt plus 60pt} % absorbs part of the leftover space so gaps stay compact
+\pagebreak % break without \vfil so \flushbottom fills the page
+\end{document}
