@@ -22,6 +22,7 @@ jobs:
           root_file: |
             resume.tex
             product-resume.tex
+            cover-letter.tex
 
       - name: Post Processing
         run: |
