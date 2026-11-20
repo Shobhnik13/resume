@@ -7,6 +7,8 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{textcomp}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=14pt, topsep=2pt, partopsep=0pt, parsep=0pt, itemsep=2pt}
 
 \definecolor{accent}{HTML}{2563EB}
 \definecolor{muted}{HTML}{6B7280}
@@ -34,13 +36,30 @@
 
 hey team,
 
-i'm a full-stack engineer leaning backend, ai and infra, 3 years in, currently at xane ai. my favourite spot is where product, ai, and infra all intersect --- figuring out what's actually worth building, then building it so it doesn't fall over. i like designing the system architecture, the schemas, the failure-catching mechanisms. agents write a lot of my code now. i make sure it's the right thing and that it holds. i've mostly worked in lean teams, or as the solo engineer on freelance and contract work, handling apps with real users.
+i'm a full-stack engineer leaning backend, AI and infra, with 3 years of experience and a product mindset. i've owned 0$\rightarrow$1 systems end-to-end at early-stage startups, from architecture and APIs to production.
+
+i care about systems that hold up at scale, not just code that works. most of my code? agents write it. i design the architecture, break down hard problems and make sure it doesn't fall apart.
+
+i work closely with founders, product and design teams, from system design and AI agents to launch and scale. mostly in lean teams, or as the solo engineer on freelance and contract work, handling apps with real users.
 
 \heading{what i've done}
 
-\textbf{xane ai}, built an ai agent on mastra that acts as an assistant for automobiles and appliances --- from information retrieval to service booking and warranty claims --- with full traceability, logging, and evals driving continuous improvement. designed terraform templates and infrastructure as code for multi-tenant enterprise deployments on aws (ec2, load balancers, s3, vpc, api gateway, bedrock). built a document ocr pipeline ingesting 100k+ pages via mineru vlm, powering rag over qdrant with rrf hybrid retrieval and reranking across sparse (bge-m3) and dense (openai text-embedding-3-small) embeddings. extended and maintained legacy microservices of the core product serving 3.1m+ users, designing schemas, apis and architecture for new services in node.js/typescript.
+\textbf{xane ai} {\color{muted}· software engineer (backend/ai)}
+\begin{itemize}
+\item built an ai agent on mastra that acts as an assistant for automobiles and appliances, handling everything from information retrieval to service booking and warranty claims.
+\item developed full traceability, logging, and explainability for the agent, using evals to track its performance and drive continuous improvement.
+\item designed terraform templates and infrastructure as code (iac) for multi-tenant enterprise deployments on aws, using ec2, load balancers, s3, vpc, api gateway and bedrock.
+\item built a document ocr pipeline ingesting 100k+ pages via mineru vlm, powering rag over qdrant with rrf hybrid retrieval and reranking, combining sparse (bge-m3) and dense (openai text-embedding-3-small) embeddings.
+\item extended and maintained legacy microservices of the core product serving 3.1m+ users, designing schemas, apis and architecture for new services and building new apis in node.js/typescript.
+\end{itemize}
 
-\textbf{otomashen}, built a high-throughput edi/x12 engine handling 20k+ claim files and millions of encrypted records --- drove a 166\% revenue increase. dragged api latency from \textasciitilde 10s down to under 1s with query tuning, indexing, and caching at scale. built a real-time dispatch system for proximity-based doctor matching, request lifecycle (accept/decline), and instant notifications. delivered 4 production-grade client systems, leading one end to end as lead developer --- architecture, implementation, deployment.
+\textbf{otomashen} {\color{muted}· software engineer}
+\begin{itemize}
+\item built and scaled a high-throughput edi/x12 processing engine handling 20k+ claim files and millions of encrypted denial records, driving a 166\% revenue increase.
+\item optimized node.js/typescript backend services, reducing api latency from 10s to under 1s.
+\item engineered a real-time dispatch system for proximity-based doctor matching, request lifecycle (accept/decline), and instant notifications.
+\item delivered 4 production-grade client systems, leading one end-to-end as the lead developer, owning architecture, implementation, and deployment.
+\end{itemize}
 
 \heading{things i've built on my own}
 
