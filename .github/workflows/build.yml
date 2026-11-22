@@ -22,8 +22,10 @@ jobs:
           root_file: |
             resume/software-resume.tex
             resume/product-resume.tex
+            resume/product-engineer-resume.tex
             cover-letter/software-cover-letter.tex
             cover-letter/product-cover-letter.tex
+            cover-letter/product-engineer-cover-letter.tex
           work_in_root_file_dir: true
 
       - name: Post Processing

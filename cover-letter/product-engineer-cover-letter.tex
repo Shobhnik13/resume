@@ -1,0 +1,94 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=0.5in,bottom=0.45in,left=0.75in,right=0.75in]{geometry}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=14pt, topsep=2pt, partopsep=0pt, parsep=0pt, itemsep=2pt}
+
+\definecolor{accent}{HTML}{2563EB}
+\definecolor{muted}{HTML}{6B7280}
+\definecolor{rulegray}{HTML}{D1D5DB}
+
+\hypersetup{colorlinks=true, linkcolor=accent, urlcolor=accent}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\linespread{1.1}
+\pagestyle{empty}
+
+\newcommand{\heading}[1]{\vspace{4pt}{\color{accent}\footnotesize\bfseries\MakeUppercase{#1}}\par\vspace{-2pt}}
+\newcommand{\lnk}[2]{\href{#1}{#2}}
+\newcommand{\hr}{{\color{rulegray}\rule{\linewidth}{0.6pt}}}
+
+\begin{document}
+
+{\LARGE\bfseries Shobhnik}\par
+\vspace{2pt}
+{\color{accent}\bfseries product engineer · full-stack, ai \& infra}\par
+{\color{muted}gurugram, india · \lnk{https://shobhnik.site}{shobhnik.site} · \lnk{https://github.com/shobhnik13}{github.com/shobhnik13} · \lnk{mailto:shobhnikw@gmail.com}{shobhnikw@gmail.com}}\par
+\vspace{-2pt}
+\hr
+
+hey team,
+
+i'm a product engineer, full-stack leaning backend, AI and infra, with 3 years of experience. i've owned 0$\rightarrow$1 products end-to-end at YC and early-stage startups, from architecture and APIs to launch.
+
+i care about systems that hold up at scale, not just code that works. most of my code? agents write it. i design the architecture, break down hard problems and make sure it doesn't fall apart.
+
+i work closely with founders, product and design teams, from system design and AI agents to launch and scale. mostly in lean teams, or as the solo engineer on freelance and contract work, handling apps with real users.
+
+\heading{what i've done}
+
+\textbf{xane ai} {\color{muted}· software engineer (backend/ai)}
+\begin{itemize}
+\item built an ai agent on mastra that acts as an assistant for automobiles and appliances, handling everything from information retrieval to service booking and warranty claims.
+\item developed full traceability, logging, and explainability for the agent, using evals to track its performance and drive continuous improvement.
+\item designed terraform templates and infrastructure as code (iac) for multi-tenant enterprise deployments on aws, using ec2, load balancers, s3, vpc, api gateway and bedrock.
+\item built a document ocr pipeline ingesting 100k+ pages via mineru vlm, powering rag over qdrant with rrf hybrid retrieval and reranking, combining sparse (bge-m3) and dense (openai text-embedding-3-small) embeddings.
+\item extended and maintained legacy microservices of the core product serving 3.1m+ users, designing schemas, apis and architecture for new services and building new apis in node.js/typescript.
+\end{itemize}
+
+\textbf{roger (yc s24)} {\color{muted}· product engineer}
+\begin{itemize}
+\item built an ai agent that takes a brand's website url, scrapes its site and online presence, and learns the brand's identity, tone, and visual style to generate on-brand posts, creatives, and ugc-style ads.
+\item architected the system and built the url-to-live-ad loop end-to-end using gpt image 2, seedance 2 live-avatar video, and meta ads apis, with tool orchestration, context and memory management, and job queueing and retries.
+\end{itemize}
+
+\textbf{otomashen} {\color{muted}· software engineer}
+\begin{itemize}
+\item built and scaled a high-throughput edi/x12 processing engine handling 20k+ claim files and millions of encrypted denial records, driving a 166\% revenue increase.
+\item optimized node.js/typescript backend services, reducing api latency from 10s to under 1s.
+\item engineered a real-time dispatch system for proximity-based doctor matching, request lifecycle (accept/decline), and instant notifications.
+\item delivered 4 production-grade client systems, leading one end-to-end as the lead developer, owning architecture, implementation, and deployment.
+\end{itemize}
+
+\textbf{stealth startup (yc-backed)} {\color{muted}· founding product engineer}
+\begin{itemize}
+\item owned the product end-to-end as the founding product engineer, including system architecture, database schema, frontend, backend apis, and deployment.
+\item built an ai work-management platform on langgraph, gemini, node.js, bullmq, redis, and postgresql, handling 100k--200k requests per month.
+\end{itemize}
+
+\heading{things i've built on my own}
+
+\textbf{reachtoyc}, an ai agent for cold outreach to yc founders: pick a batch and it finds every founder and their likely emails, researches each company on the web, and drafts a personal email from your own prompt, resume and portfolio, sent from your own inbox. runs fully locally, free and open source: \lnk{https://reachtoyc.vercel.app}{reachtoyc.vercel.app}
+
+\textbf{findmejob}, a go + wails desktop app with 100k+ jobs scraped from wellfound, greenhouse and more without public apis, plus your local agents (claude code, codex, opencode) to research companies, find founders and write the email: \lnk{https://findmejob.xyz}{findmejob.xyz}
+
+\textbf{amigmi}, a fun tool to track all your ai coding spend: \lnk{https://amigmi.xyz}{amigmi.xyz}
+
+that's it for now --- would love to talk more about my stuff down the line. thanks for your time.
+
+\vspace{2pt}
+\hr
+\vspace{-4pt}
+
+{\color{muted}portfolio}\ \ \lnk{https://shobhnik.site}{shobhnik.site}\qquad
+{\color{muted}email}\ \ \lnk{mailto:shobhnikw@gmail.com}{shobhnikw@gmail.com}\qquad
+{\color{muted}book a call}\ \ \lnk{https://calendly.com/shobhnikw/whoami}{calendly.com/shobhnikw/whoami}
+
+\end{document}
